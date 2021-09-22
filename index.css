@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family:'Kumbh Sans', sans-serif;
+    background: linear-gradient(#AF67E9 , #6565E7);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 20px;
+    min-height: 510px;
+    max-width: 919px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 43px 53px 0 rgb(0 0 0 / 19%);
+}
+
+.card__picks {
+    display: flex;
+    width: 58%;
+    overflow: hidden;
+    position: relative;
+}
+
+.illustration-box-desktop {
+    background-image: url('./images/illustration-box-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 177px;
+    height: 171px;
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    top: 307px;
+    left: calc(7vh + 51px); 
+}
+
+.woman-online-desktop {
+    background-image: url('./images/illustration-woman-online-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 40em;
+    height: 30.5em;
+    z-index: 1;
+    overflow: visible;
+    right: 6.5em;
+    top: 6em;
+}
+
+.pattern {
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55.9em;
+    width: 82.8em;
+    position: absolute;
+    right: 6.6em;
+    top: -13.5em;
+}
+
+.card__holder {
+    display: flex;
+    flex-direction: column;
+    width: 50%;    
+    margin-right: 4%;
+    align-self: center;
+    gap: 8px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.holder__question {
+    border-bottom: 1px solid lightgrey;
+    margin: 4px 0;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder__question :hover {
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    color: black;
+}
+
+span {
+    display: none;
+    width: 96%;
+    font-size: 0.83rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.off {
+    font-weight: normal;
+}
+
+.off :hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.off img {
+    transition: .2s;
+}
+
+.off span {
+    display: none;
+}
+
+.on h3 {
+    font-weight: bold;
+    color: hsl(238, 29%, 16%);
+}
+
+.on img {
+    transform: rotate(180deg);
+    transition: .2s;
+}
+
+.on span {
+    display: block;
+}
+
+.line-up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+summary {
+    display: block;
+}
+
+.bolded {
+    font-weight: 700;
+}
+
+.red-color{
+    transition: color;
+    color:black;
+}
+.red-color:hover {
+    color:red;
+}
+
+.open {
+    display: block;
+}
+
+@media only screen and (max-width: 1100px){
+
+.container{
+    margin: 15rem auto;
+}
+
+.card {
+     flex-direction: column;
+     height: 100%;
+     margin: 1rem 2rem;
+     width: auto;
+     padding: 3rem;
+}
+
+.card__picks {
+    overflow: visible;
+    width: auto;
+    height: 24rem;
+    display: block;
+    margin: 0 auto;
+    top: -199px;
+    left: -41px;
+ }
+
+.header {
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+span {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+.paragraph {
+    width: 80%;
+}
+
+p {
+    font-size: 1.7rem;
+    line-height: 2.8rem
+}
+
+.to-transform {
+    width: 1.5rem;
+}
+
+div img {
+    width: 1.5rem;
+}
+
+ .card__holder {
+     margin: 0;
+     width: 100%;
+ }
+
+ .holder__question {
+    width: 100%;
+ }
+
+ .hide.active {
+    display: block;
+    font-size: 1.8rem;
+}
+
+ .woman-online-desktop {
+    background-image: url(./images/illustration-woman-online-mobile.svg);
+    width: 60em;
+    height: 44em;
+    position: relative;
+    right: 0; 
+    top: 0;
+ }
+
+ .pattern {
+    background-image: url(./images/bg-pattern-mobile.svg);
+    position: relative;
+    height: 22.2em;
+    width: 52.2em;
+    display: flex;
+    right: -5.7rem;
+    top: -15rem;
+ }
+
+ .illustration-box-desktop {
+    display: none;
+ }
+
+}
+
+@media only screen and (max-width: 860px){
+    
+    
+    .card {
+        margin: 21rem 5%;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+
+    .woman-online-desktop {
+        width: auto;
+    height: 29rem;
+    }
+
+    .pattern {
+        right: -2.7rem;
+    }
+
+    .card__picks {
+        height: 8rem;
+        top: -329px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    
+.card {
+    margin: 5rem 4%;
+    padding: 4%;
+}
+    
+.card__picks {
+    height: 6rem;
+    top: -233px;
+}
+    
+h1 {
+    font-size: 4rem;
+}
+    
+h3,
+span {
+    font-size: 2rem;
+}
+      
+.woman-online-desktop {
+    width: 30rem;
+    height: 22rem;
+}
+    
+.pattern {
+    height: 14.1em;
+    width: 33.2em;
+    right: -4.7rem;
+    top: -9.3rem;
+}
+
+}
+
+@media only screen and (max-width: 425px){
+
+    .card__picks {
+        height: 6rem;
+        top: -189px;
+    }
+
+    .woman-online-desktop {
+        width: 25rem;
+        height: 18.5rem;
+    }
+
+    .pattern {
+        height: 12.1em;
+        width: 28.2em;
+        top: -7.3rem;
+        right: -3.7rem;
+    }
+
+    h3, span {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+
+    .woman-online-desktop {
+        width: 19rem;
+        height: 14rem;
+    }
+
+    .pattern {
+        height: 9.1em;
+        width: 21.2em;
+        display: flex;
+        right: -2.7rem;
+        top: -6.3rem;
+    }
+
+    .card__picks {
+        height: 4rem;
+        top: -9.06rem;
+        left: -1rem;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 320px){
+
+    .card {
+    margin: 5rem 4%;
+    padding: 4%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    span {
+        font-size: 1.3rem;
+    }
+
+    .woman-online-desktop {
+        width: 19rem;
+        height: 14rem;
+    }
+
+    .pattern {
+        height: 9.1em;
+        width: 21.2em;
+        display: flex;
+        right: -2.7rem;
+        top: -6.3rem;
+    }
+
+    .card__picks {
+        height: 4rem;
+        top: -145px;
+        left: -2.3rem;
+    }
+
+
+}
+
