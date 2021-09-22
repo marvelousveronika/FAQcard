@@ -1,2 +1,2 @@
-# FAQcard
+# FAQ card
 FAQ card
